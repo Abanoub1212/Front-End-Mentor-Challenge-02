@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Montserrat: 'Montserrat', sans-serif;
+    --Fraunces: 'Fraunces', serif;
+    --Btnkcolor:hsl(158, 36%, 37%);
+    --Bodycolor:hsl(30, 38%, 92%);
+    --Textpcolor:hsl(228, 12%, 48%);
+    --Texthcolor:hsl(212, 21%, 14%);
+    --Maincolor:hsl(0, 0%, 100%);
+}
+body{
+    background-color: var(--Bodycolor,black);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: max(22em,38em);
+    margin: 1em;
+    max-height: 41em;
+    display: flex;
+    background-color: var(--Maincolor,black);
+    border-radius: 0.5em;
+}
+main .sec1{
+    min-width: 50%;
+    height: 29em;
+    background-image: url(images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+}
+main .sec2{
+    min-width: 40%;
+    margin:0.6em 1.6em;
+}
+main .sec2 p:first-of-type{
+    letter-spacing: 0.25em;
+    margin:2em 0;
+}
+main .sec2 p{
+    font-size: 0.79rem;
+    color: var(--Textpcolor,black);
+    margin:2em 0;
+    font-family: var(--Montserrat);
+    line-height: 1.8;
+}
+main .sec2 h1{
+    font-family: var(--Fraunces);
+    color: var(--Texthcolor,black);
+    line-height: 1;
+}
+main .sec2 .price{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+main .sec2 .price h1{
+    color: var(--Btnkcolor,black);
+}
+main .sec2 del {
+    font-size: 0.875rem;
+    margin-left: 1.5em;
+    color: var(--Textpcolor,black);
+    font-family: var(--Montserrat);
+}
+main .sec2 button{
+    width: 100%;
+    padding: 1.2em;
+    display: flex;
+    justify-content: center;
+    border: none;
+    color: var(--Maincolor,black);
+    font-family: var(--Montserrat);
+    font-weight: 700;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    background-color: var(--Btnkcolor,black);
+    cursor: pointer;
+}
+main .sec2 button img{
+    margin-right: 0.8em;
+}
+main .sec2 button:hover{
+    background-color: hsl(159, 63%, 14%);
+}
+@media (max-width:767px) {
+    main{
+        flex-direction: column;
+    }
+    main .sec1{
+        background-image: url(images/image-product-mobile.jpg);
+        border-radius: 0.5em 0.5em 0 0;
+    }
+    main .sec2 p{
+        margin-right:3em;
+    }
+}
