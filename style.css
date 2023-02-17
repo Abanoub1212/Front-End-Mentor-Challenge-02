@@ -20,7 +20,7 @@ body{
     align-items: center;
 }
 main{
-    width: max(22em,38em);
+    width: max(22em,39em);
     margin: 1em;
     max-height: 41em;
     display: flex;
@@ -29,8 +29,8 @@ main{
 }
 main .sec1{
     min-width: 50%;
-    height: 29em;
-    background-image: url(images/image-product-desktop.jpg);
+    height: 27em;
+    background-image: linear-gradient(rgba(0,0,0,0.2),transparent),url(images/image-product-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-top-left-radius: 0.5em;
@@ -38,14 +38,14 @@ main .sec1{
 }
 main .sec2{
     min-width: 40%;
-    margin:0.6em 1.6em;
+    margin:1em 1.4em;
 }
 main .sec2 p:first-of-type{
-    letter-spacing: 0.25em;
-    margin:2em 0;
+    letter-spacing: 0.6em;
+    margin:1em 0;
 }
 main .sec2 p{
-    font-size: 0.79rem;
+    font-size: 0.875rem;
     color: var(--Textpcolor,black);
     margin:2em 0;
     font-family: var(--Montserrat);
@@ -95,10 +95,10 @@ main .sec2 button:hover{
         flex-direction: column;
     }
     main .sec1{
-        background-image: url(images/image-product-mobile.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.2),transparent),url(images/image-product-mobile.jpg);
         border-radius: 0.5em 0.5em 0 0;
-    }
+}
     main .sec2 p{
-        margin-right:3em;
+        margin-right:3.375em;
     }
 }
